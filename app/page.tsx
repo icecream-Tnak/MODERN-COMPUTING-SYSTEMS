@@ -3,8 +3,7 @@ import { courseHref, courseSectionHref } from "./site-paths";
 import TeachingCalendar from "./teaching-calendar";
 
 const announcements = [
-  { date: "07.16", label: "网站更新", text: "教学日历已整合到主页，可快速定位第 1–16 周。" },
-  { date: "09.08", label: "课程开始", text: "第一周：课程导论、性能指标与 Amdahl 定律。" },
+  { date: "09.09", label: "课程开始", text: "第一周：课程导论、计算系统演进与冯·诺依曼架构。" },
 ];
 
 const learningPaths = [
