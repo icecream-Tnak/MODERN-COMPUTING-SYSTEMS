@@ -1,9 +1,9 @@
 import type { CoursewareItem } from "./courseware-explorer";
 
 export const courseware: CoursewareItem[] = [
-  { no: "0", title: "课程简介与内容安排", summary: "现代计算系统结构与算力技术 课程简介", topic: "导论", file: "0 - 课程简介与内容安排.pptx", available: true },
-  { no: "1-1", title: "计算系统的历史演进", summary: "核心问题：计算核心如何从通用走向专用，以应对不同的效率瓶颈？", topic: "基础", file: "1-1 - 计算系统的历史演进.pptx", available: true },
-  { no: "1-2", title: "冯·诺依曼架构与三大瓶颈", summary: "核心问题：从存储程序到现代计算系统的演进动力", topic: "体系结构", file: "1-2 冯·诺依曼架构与三大瓶颈.pptx", available: true },
+  { no: "0", title: "课程简介与内容安排", summary: "现代计算系统结构与算力技术 课程简介", topic: "导论", file: "0 - 课程简介与内容安排.pdf", available: true },
+  { no: "1-1", title: "计算系统的历史演进", summary: "核心问题：计算核心如何从通用走向专用，以应对不同的效率瓶颈？", topic: "基础", file: "1-1 - 计算系统的历史演进.pdf", available: true },
+  { no: "1-2", title: "冯·诺依曼架构与三大瓶颈", summary: "核心问题：从存储程序到现代计算系统的演进动力", topic: "体系结构", file: "1-2 冯·诺依曼架构与三大瓶颈.pdf", available: false },
   // { no: "03", title: "流水线与乱序执行", summary: "指令级并行与现代处理器性能优化", topic: "体系结构", file: "03-流水线与乱序执行.pptx", available: false },
   // { no: "04", title: "存储系统", summary: "缓存、主存与存储层次结构", topic: "存储", file: "04-存储系统.pptx", available: false },
   // { no: "05", title: "并行计算与加速", summary: "多核处理器、并行模型与加速方法", topic: "并行计算", file: "05-并行计算与加速.pptx", available: false },
@@ -24,18 +24,18 @@ export type WeekPlan = {
 
 export const weekPlans: WeekPlan[] = [
   { week: 1, title: "课程导论；计算系统演进与冯·诺依曼架构", focus: "分析机、ENIAC，“结构-组成-实现”层次，三大瓶颈：功耗墙、存储墙、ILP墙", activity: "作业1：分析一个冯·诺依曼瓶颈实例", type: "理论" },
-  { week: 2, title: "多核、并行与异构", focus: "单核瓶颈、多核兴起、弗林分类法、SIMD/MIMD/SIMT概念", activity: "无", type: "理论" },
-  { week: 3, title: "处理器微架构（一）", focus: "流水线基础、三类冒险、数据转发、分支预测", activity: "无", type: "理论" },
-  { week: 4, title: "处理器微架构（二）", focus: "超标量、乱序执行、寄存器重命名", activity: "无", type: "理论" },
+  { week: 2, title: "多核、并行与异构", focus: "单核瓶颈、多核兴起、弗林分类法、SIMD/MIMD/SIMT概念", activity: "", type: "理论" },
+  { week: 3, title: "处理器微架构（一）", focus: "流水线基础、三类冒险、数据转发、分支预测", activity: "", type: "理论" },
+  { week: 4, title: "处理器微架构（二）", focus: "超标量、乱序执行、寄存器重命名", activity: "", type: "理论" },
   { week: 5, title: "存储系统与缓存一致性", focus: "存储层次、存储墙、MESI协议概述", activity: "实践1：存储编码实验", type: "理论 + 实验" },
   { week: 6, title: "片上互联与NUMA架构", focus: "Ring/Mesh、AMD Infinity Fabric、NUMA特性", activity: "作业：研讨准备", type: "理论" },
   { week: 7, title: "并行计算理论与模型", focus: "阿姆达尔定律、古斯塔夫森定律、PRAM/BSP/LogP简介", activity: "研讨1：缓存一致性工程案例（MESI在多核CPU中的实现挑战与优化）", type: "理论 + 研讨" },
   { week: 8, title: "GPU与SIMT架构", focus: "SM结构、线程束、分化、CUDA编程模型简介", activity: "实践2：容器化边缘计算模拟", type: "理论 + 实验" },
   { week: 9, title: "分布式系统基础与CAP定理", focus: "核心挑战、CAP内涵与权衡", activity: "作业：研讨准备", type: "理论" },
   { week: 10, title: "分布式共识与云计算", focus: "Paxos/Raft核心思想、IaaS/PaaS/SaaS", activity: "研讨2：云边端协同架构设计（以智慧城市为例，讨论任务卸载策略）", type: "理论 + 研讨" },
-  { week: 11, title: "云边端协同与大模型训练基础", focus: "边缘计算概念、数据并行/模型并行/流水线并行", activity: "无", type: "研讨" },
+  { week: 11, title: "云边端协同与大模型训练基础", focus: "边缘计算概念、数据并行/模型并行/流水线并行", activity: "", type: "研讨" },
   { week: 12, title: "能效计算与存算一体原理", focus: "", activity: "实践3：硬件性能监测（使用nvidia-smi监测GPU/CPU/内存，分析负载特征）", type: "理论 + 实验" },
-  { week: 13, title: "神经形态与量子计算简介", focus: "", activity: "无", type: "理论" },
+  { week: 13, title: "神经形态与量子计算简介", focus: "", activity: "", type: "理论" },
   { week: 14, title: "异构计算生态观", focus: "CPU+GPU+NPU+…融合", activity: "实践4：量子计算模拟演示（Qiskit教师演示，学生观察叠加态与测量，提交简评报告）", type: "理论 + 实验" },
   { week: 15, title: "综合复习", focus: "重点知识串讲", activity: "课程复习与答疑", type: "复习" },
   { week: 16, title: "综合习题课", focus: "覆盖全学期核心知识点", activity: "课程复习与答疑", type: "复习" },
