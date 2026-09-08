@@ -23,7 +23,7 @@ export type WeekPlan = {
 };
 
 export const weekPlans: WeekPlan[] = [
-  { week: 1, title: "课程导论；计算系统演进与冯·诺依曼架构", focus: "分析机、ENIAC，“结构-组成-实现”层次，三大瓶颈：功耗墙、存储墙、ILP墙", activity: "作业1：分析一个冯·诺依曼瓶颈实例", type: "理论" },
+  { week: 1, title: "课程导论、计算系统演进与冯·诺依曼架构", focus: "分析机、ENIAC，“结构-组成-实现”层次，三大瓶颈：功耗墙、存储墙、ILP墙", activity: "作业1：分析一个冯·诺依曼瓶颈实例", type: "理论" },
   { week: 2, title: "多核、并行与异构", focus: "单核瓶颈、多核兴起、弗林分类法、SIMD/MIMD/SIMT概念", activity: "", type: "理论" },
   { week: 3, title: "处理器微架构（一）", focus: "流水线基础、三类冒险、数据转发、分支预测", activity: "", type: "理论" },
   { week: 4, title: "处理器微架构（二）", focus: "超标量、乱序执行、寄存器重命名", activity: "", type: "理论" },
