@@ -4,7 +4,7 @@ export const courseware: CoursewareItem[] = [
   { no: "0", title: "课程简介与内容安排", summary: "现代计算系统结构与算力技术 课程简介", topic: "导论", file: "0 - 课程简介与内容安排.pdf", available: true },
   { no: "1-1", title: "计算系统的历史演进", summary: "核心问题：计算核心如何从通用走向专用，以应对不同的效率瓶颈？", topic: "基础", file: "1-1 - 计算系统的历史演进.pdf", available: true },
   { no: "1-2", title: "冯·诺依曼架构与三大瓶颈", summary: "核心问题：从存储程序到现代计算系统的演进动力", topic: "体系结构", file: "1-2 冯·诺依曼架构与三大瓶颈.pdf", available: true },
-  { no: "03", title: "流水线与乱序执行", summary: "指令级并行与现代处理器性能优化", topic: "体系结构", file: "03-流水线与乱序执行.pptx", available: true },
+  { no: "03", title: "流水线与乱序执行", summary: "指令级并行与现代处理器性能优化", topic: "体系结构", file: "03-流水线与乱序执行.pdf", available: true },
   // { no: "04", title: "存储系统", summary: "缓存、主存与存储层次结构", topic: "存储", file: "04-存储系统.pptx", available: false },
   // { no: "05", title: "并行计算与加速", summary: "多核处理器、并行模型与加速方法", topic: "并行计算", file: "05-并行计算与加速.pptx", available: false },
   // { no: "06", title: "GPU 架构与编程模型", summary: "GPU 执行模型、存储组织与算力特征", topic: "异构计算", file: "06-GPU架构与编程模型.pptx", available: false },
