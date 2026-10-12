@@ -41,12 +41,25 @@ export const weekPlans: WeekPlan[] = [
   { week: 16, title: "综合习题课", focus: "覆盖全学期核心知识点", activity: "课程复习与答疑", type: "复习" },
 ];
 
-export const labs = [
-  { no: "01", title: "实践1：存储编码实验", weeks: "第 5 周", duration: "1 学时", tools: "DNA Storage Designer在线平台", goal: "光电存储与DNA存储对比", deliverable: "实验报告" },
-  { no: "02", title: "实践2：容器化边缘计算模拟", weeks: "第 8 周", duration: "1 学时", tools: "Docker / MQTT", goal: "Docker安装与MQTT镜像运行", deliverable: "实验报告" },
-  { no: "03", title: "实践3：硬件性能监测", weeks: "第 12 周", duration: "1 学时", tools: "NVIDIA Driver", goal: "使用nvidia-smi监测GPU/CPU/内存，分析负载特征", deliverable: "实验报告" },
-  { no: "04", title: "实践4：量子计算模拟演示", weeks: "第 14 周", duration: "1 学时", tools: "Qiskit", goal: "Qiskit教师演示，学生观察叠加态与测量，提交简评报告", deliverable: "实验报告" },
+export type LabItem = { no: string; title: string; weeks: string; duration: string; tools: string; goal: string; deliverable: string;
+  // 文件上传后填写路径，示例：
+  // toolsUrl: "/labs/01/tool.html",
+  // reportTemplate: "/labs/01/report-template.docx",
+  // theoryPdf: "/labs/01/theory.pdf",
+  // guidePdf: "/labs/01/guide.pdf",
+  toolsUrl?: string;       // 实验工具HTML或外部网址
+  reportTemplate?: string; // 实验报告模板
+  theoryPdf?: string;      // 理论内容PDF
+  guidePdf?: string;       // 实验指导书PDF
+};
+
+export const labs: LabItem[] = [
+  { no: "01", title: "实践1：存储编码实验", weeks: "第 5 周", duration: "1 学时", tools: "存储编码实验平台", goal: "光电存储与DNA存储对比", deliverable: "实验报告", toolsUrl: "", reportTemplate: "", theoryPdf: "", guidePdf: "",},
+  {no: "02", title: "实践2：容器化边缘计算模拟", weeks: "第 8 周", duration: "1 学时", tools: "Docker / MQTT", goal: "Docker安装与MQTT镜像运行", deliverable: "实验报告", toolsUrl: "", reportTemplate: "", theoryPdf: "", guidePdf: "",},
+  {no: "03", title: "实践3：硬件性能监测", weeks: "第 12 周", duration: "1 学时", tools: "NVIDIA Driver", goal: "使用nvidia-smi监测GPU，结合系统工具监测CPU与内存，分析负载特征", deliverable: "实验报告", toolsUrl: "", reportTemplate: "", theoryPdf: "", guidePdf: "",},
+  {no: "04", title: "实践4：量子计算模拟演示", weeks: "第 14 周", duration: "1 学时", tools: "Qiskit", goal: "Qiskit教师演示，学生观察叠加态与测量，提交简评报告", deliverable: "实验报告", toolsUrl: "", reportTemplate: "", theoryPdf: "", guidePdf: "",},
 ];
+
 
 export const usefulLinks = [
   { title: "哈尔滨工程大学课程攻略共享计划", source: "学生共享资源", url: "https://heu.us.kg/", tag: "中文资料", description: "汇集多门课程的学习资料与经验，可用于查找相近课程的复习材料和学习路径。内容由社区整理，使用时请注意核对版本。" },
