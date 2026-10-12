@@ -25,7 +25,7 @@ export default function LabsPage() {
               <div className="lab-detail">
                 <p>{lab.goal}</p>
                 <dl><div><dt>实验工具</dt><dd>{lab.tools}</dd></div><div><dt>提交内容</dt><dd>{lab.deliverable}</dd></div></dl>
-                <span>实验指导书 · 待上传</span>
+                {/* <span>实验指导书 · 待上传</span> */}
               </div>
             </details>
           ))}
