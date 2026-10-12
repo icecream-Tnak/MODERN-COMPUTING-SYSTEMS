@@ -54,7 +54,7 @@ export type LabItem = { no: string; title: string; weeks: string; duration: stri
 };
 
 export const labs: LabItem[] = [
-  { no: "01", title: "实践1：存储编码实验", weeks: "第 5 周", duration: "1 学时", tools: "存储编码实验平台", goal: "光电存储与DNA存储对比", deliverable: "实验报告", toolsUrl: "/labs/01/tool.html", reportTemplate: "/labs/01/report-template.docx", theoryPdf: "/labs/01/theory.pdf", guidePdf: "/labs/01/guide.pdf",},
+  { no: "01", title: "实践1：存储编码实验", weeks: "第 5 周", duration: "1 学时", tools: "存储编码实验平台", goal: "光电存储与DNA存储对比", deliverable: "实验报告", toolsUrl: "/labs/01/tool.html", reportTemplate: "/labs/01/report-template.docx", theoryPdf: "/labs/01/theory.pptx", guidePdf: "/labs/01/guide.pdf",},
   {no: "02", title: "实践2：容器化边缘计算模拟", weeks: "第 8 周", duration: "1 学时", tools: "Docker / MQTT", goal: "Docker安装与MQTT镜像运行", deliverable: "实验报告", toolsUrl: "", reportTemplate: "", theoryPdf: "", guidePdf: "",},
   {no: "03", title: "实践3：硬件性能监测", weeks: "第 12 周", duration: "1 学时", tools: "NVIDIA Driver", goal: "使用nvidia-smi监测GPU，结合系统工具监测CPU与内存，分析负载特征", deliverable: "实验报告", toolsUrl: "", reportTemplate: "", theoryPdf: "", guidePdf: "",},
   {no: "04", title: "实践4：量子计算模拟演示", weeks: "第 14 周", duration: "1 学时", tools: "Qiskit", goal: "Qiskit教师演示，学生观察叠加态与测量，提交简评报告", deliverable: "实验报告", toolsUrl: "", reportTemplate: "", theoryPdf: "", guidePdf: "",},
