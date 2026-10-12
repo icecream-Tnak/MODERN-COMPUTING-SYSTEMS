@@ -6,7 +6,7 @@ export const courseware: CoursewareItem[] = [
   { no: "1-2", title: "冯·诺依曼架构与三大瓶颈", summary: "核心问题：从存储程序到现代计算系统的演进动力", topic: "体系结构", file: "1-2 冯·诺依曼架构与三大瓶颈.pdf", available: true },
   { no: "03", title: "流水线与乱序执行", summary: "指令级并行与现代处理器性能优化", topic: "体系结构", file: "03-流水线与乱序执行.pdf", available: true },
   { no: "04", title: "单芯片集成与异构架构", summary: "同构多核、异构计算", topic: "体系结构", file: "3-1 单芯片集成与异构架构.pdf", available: true },
-  // { no: "05", title: "并行计算与加速", summary: "多核处理器、并行模型与加速方法", topic: "并行计算", file: "05-并行计算与加速.pptx", available: false },
+  { no: "4", title: "并行计算的理论基础", summary: "概念体系、三大定律、分析方法", topic: "并行计算", file: "4-并行计算的理论基础.pdf", available: true },
   // { no: "06", title: "GPU 架构与编程模型", summary: "GPU 执行模型、存储组织与算力特征", topic: "异构计算", file: "06-GPU架构与编程模型.pptx", available: false },
   // { no: "07", title: "异构计算系统", summary: "CPU、GPU 与专用加速器的协同计算", topic: "异构计算", file: "07-异构计算系统.pptx", available: false },
   // { no: "08", title: "数据中心与算力网络", summary: "集群架构、互连网络与资源调度", topic: "算力基础设施", file: "08-数据中心与算力网络.pptx", available: false },
