@@ -17,3 +17,24 @@ export function courseSectionHref(id: string) {
 }
 
 export const courseRoutes = ["/", "/courseware", "/labs", "/questions", "/resources"];
+
+export function courseAssetHref(path?: string): string | undefined {
+  const value = path?.trim();
+  if (!value) return undefined;
+
+  // 支持外部网站。
+  if (/^https?:\/\//i.test(value)) return value;
+
+  // 其余只允许站内文件路径。
+  if (
+    /^[a-z][a-z0-9+.-]*:/i.test(value) ||
+    value.startsWith("//") ||
+    value.includes("\\")
+  ) {
+    return undefined;
+  }
+
+  return encodeURI(
+    `${courseBasePath}/${value.replace(/^\/+/, "")}`
+  );
+}
